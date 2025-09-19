@@ -1,0 +1,19 @@
+{
+  "name": "Rust Dev Container",
+  "context": "..",
+  "dockerFile": "../Dockerfile",
+  "remoteUser": "root",
+  "mounts": ["source=${localWorkspaceFolder},target=/usr/src/app,type=bind"],
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "rust-lang.rust-analyzer",
+    "serayuzgur.crates",
+    "eamodio.gitlens",
+    "bungcip.better-toml",
+    "serayuzgur.cargo-toml-snippets",
+    "usernamehw.errorlens",
+    "k--kato.intellij-idea-keybindings"
+  ]
+}
